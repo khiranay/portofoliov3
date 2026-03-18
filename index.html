@@ -6,7 +6,7 @@
 <title>naiya — portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#3a3a3f;--bg2:#2e2e33;--bg3:#4a4a52;--card:#c8919a;--card-light:#dba8b0;--card-dark:#b07880;--nav-active:#f0c080;--nav-text:#d0ccc8;--text:#f5f0ec;--text-dim:#9a9690;--blue-border:#5588cc;--badge-text:#f0b060;--progress-bg:#5a5a62;--folder:#5a5a65;--accent:#f0c080;}
+:root{--bg:#1e1e22;--bg2:#18181c;--bg3:#2c2c32;--card:#c8c8d4;--card-light:#e0e0ec;--card-dark:#a0a0b0;--nav-active:#ffffff;--nav-text:#888890;--text:#ebebf0;--text-dim:#666670;--blue-border:#888898;--badge-text:#d8d8e4;--progress-bg:#2e2e36;--folder:#3e3e48;--accent:#d0d0dc;}
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;cursor:none;}
@@ -16,7 +16,7 @@ nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9995;bac
 @keyframes slideDown{from{opacity:0;transform:translateX(-50%) translateY(-20px) scale(.9)}to{opacity:1;transform:translateX(-50%) translateY(0) scale(1)}}
 nav a{padding:6px 18px;border-radius:20px;text-decoration:none;font-family:'Space Mono',monospace;font-size:.72rem;color:var(--nav-text);transition:all .2s;letter-spacing:.02em;}
 nav a:hover{color:var(--text);}
-nav a.active{background:var(--nav-active);color:#2a2020;font-weight:700;}
+nav a.active{background:var(--nav-active);color:#1a1a22;font-weight:700;}
 section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 20px 40px;position:relative;}
 section#contact{min-height:auto;}
 #hero{background:var(--bg);overflow:hidden;min-height:100vh;display:flex;align-items:center;justify-content:center;}
@@ -25,10 +25,10 @@ section#contact{min-height:auto;}
 .bg-blob-1{width:400px;height:400px;background:var(--card);top:10%;left:-10%;}
 .bg-blob-2{width:300px;height:300px;background:var(--blue-border);top:40%;right:-8%;opacity:.12;}
 .bg-blob-3{width:200px;height:200px;background:var(--accent);bottom:5%;left:30%;opacity:.10;}
-.holo-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,145,154,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(200,145,154,.04) 1px,transparent 1px),linear-gradient(rgba(85,136,204,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(85,136,204,.025) 1px,transparent 1px);background-size:48px 48px,48px 48px,192px 192px,192px 192px;pointer-events:none;z-index:0;mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 30%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 30%,transparent 100%);}
-.data-stream{position:absolute;font-family:'Space Mono',monospace;font-size:.52rem;color:rgba(200,145,154,.18);white-space:nowrap;letter-spacing:.05em;pointer-events:none;z-index:0;animation:streamScroll linear infinite;}
+.holo-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(180,180,195,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(180,180,195,.04) 1px,transparent 1px),linear-gradient(rgba(130,130,155,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(130,130,155,.025) 1px,transparent 1px);background-size:48px 48px,48px 48px,192px 192px,192px 192px;pointer-events:none;z-index:0;mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 30%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 30%,transparent 100%);}
+.data-stream{position:absolute;font-family:'Space Mono',monospace;font-size:.52rem;color:rgba(180,180,195,.18);white-space:nowrap;letter-spacing:.05em;pointer-events:none;z-index:0;animation:streamScroll linear infinite;}
 @keyframes streamScroll{from{transform:translateX(100vw)}to{transform:translateX(-200%)}}
-.hex-badge{position:absolute;font-family:'Space Mono',monospace;font-size:.5rem;color:rgba(200,145,154,.12);pointer-events:none;z-index:0;animation:hexFloat ease-in-out infinite;}
+.hex-badge{position:absolute;font-family:'Space Mono',monospace;font-size:.5rem;color:rgba(180,180,195,.12);pointer-events:none;z-index:0;animation:hexFloat ease-in-out infinite;}
 @keyframes hexFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .hud-corner{position:absolute;pointer-events:none;z-index:1;opacity:.18;}
 .hud-tl{top:30px;left:30px;}.hud-tr{top:30px;right:30px;}.hud-bl{bottom:30px;left:30px;}.hud-br{bottom:30px;right:30px;}
@@ -48,11 +48,11 @@ section#contact{min-height:auto;}
 .side-tools{background:var(--bg2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:14px 18px;min-width:160px;max-width:200px;width:100%;}
 .side-tools-label{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.14em;color:var(--text-dim);margin-bottom:10px;}
 .side-tools-grid{display:flex;flex-wrap:wrap;gap:6px;}
-.side-tool{padding:4px 10px;background:rgba(200,145,154,.1);border:1px solid rgba(200,145,154,.2);border-radius:20px;font-size:.62rem;color:var(--card-light);font-family:'Space Mono',monospace;transition:all .25s cubic-bezier(.34,1.56,.64,1);}
-.side-tool:hover{background:rgba(200,145,154,.22);transform:scale(1.07);}
-.side-avail{background:var(--bg2);border:1px solid rgba(80,210,100,.2);border-radius:14px;padding:14px 18px;min-width:160px;max-width:200px;width:100%;}
-.side-avail-dot{width:7px;height:7px;border-radius:50%;background:rgba(80,210,100,.9);display:inline-block;margin-right:6px;animation:blink 1.4s infinite;}
-.side-avail-status{font-family:'Space Mono',monospace;font-size:.62rem;color:rgba(80,210,100,.9);margin-bottom:6px;}
+.side-tool{padding:4px 10px;background:rgba(180,180,195,.1);border:1px solid rgba(180,180,195,.2);border-radius:20px;font-size:.62rem;color:var(--text);font-family:'Space Mono',monospace;transition:all .25s cubic-bezier(.34,1.56,.64,1);}
+.side-tool:hover{background:rgba(180,180,195,.22);transform:scale(1.07);}
+.side-avail{background:var(--bg2);border:1px solid rgba(160,200,160,.2);border-radius:14px;padding:14px 18px;min-width:160px;max-width:200px;width:100%;}
+.side-avail-dot{width:7px;height:7px;border-radius:50%;background:rgba(160,200,160,.9);display:inline-block;margin-right:6px;animation:blink 1.4s infinite;}
+.side-avail-status{font-family:'Space Mono',monospace;font-size:.62rem;color:rgba(160,200,160,.9);margin-bottom:6px;}
 .side-avail-sub{font-size:.7rem;color:var(--text-dim);line-height:1.5;}
 .side-timeline{background:var(--bg2);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:14px 18px;min-width:160px;max-width:200px;width:100%;}
 .side-timeline-label{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.14em;color:var(--text-dim);margin-bottom:10px;}
@@ -112,7 +112,7 @@ section#contact{min-height:auto;}
   /* Full-width span */
   .mob-card.full{grid-column:1/-1;}
   /* Avail green border */
-  .mob-card.avail{border-color:rgba(80,210,100,.2);}
+  .mob-card.avail{border-color:rgba(160,200,160,.2);}
 
   .mob-label{
     font-family:'Space Mono',monospace;
@@ -133,7 +133,7 @@ section#contact{min-height:auto;}
   .mob-avail-status{
     font-family:'Space Mono',monospace;
     font-size:.62rem;
-    color:rgba(80,210,100,.9);
+    color:rgba(160,200,160,.9);
     margin-bottom:4px;
     display:flex;
     align-items:center;
@@ -141,7 +141,7 @@ section#contact{min-height:auto;}
   }
   .mob-avail-dot{
     width:6px;height:6px;border-radius:50%;
-    background:rgba(80,210,100,.9);
+    background:rgba(160,200,160,.9);
     animation:blink 1.4s infinite;
     flex-shrink:0;
   }
@@ -151,8 +151,8 @@ section#contact{min-height:auto;}
   .mob-tools-grid{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px;}
   .mob-tool{
     padding:3px 9px;
-    background:rgba(200,145,154,.1);
-    border:1px solid rgba(200,145,154,.2);
+    background:rgba(180,180,195,.1);
+    border:1px solid rgba(180,180,195,.2);
     border-radius:20px;
     font-size:.58rem;
     color:var(--card-light);
@@ -183,43 +183,43 @@ section#contact{min-height:auto;}
 /* HERO CARD */
 .hero-frame{width:min(300px,88vw);background:#4a4852;border-radius:24px;padding:0 0 20px 0;position:relative;z-index:1;box-shadow:0 24px 70px rgba(0,0,0,.35);animation:framePop .9s cubic-bezier(.34,1.56,.64,1) .2s both;overflow:hidden;flex-shrink:0;}
 @keyframes framePop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
-.avatar-block{width:100%;background:var(--card);border-radius:16px 16px 0 0;position:relative;min-height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.scan-beam{position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(80,200,255,.9),transparent);box-shadow:0 0 12px 4px rgba(80,200,255,.5);top:0;animation:scanBeam 2s ease-in-out 1s 2 alternate;opacity:0;z-index:5;}
+.avatar-block{width:100%;background:linear-gradient(145deg,#3a3a44,#2a2a32);border-radius:16px 16px 0 0;position:relative;min-height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.scan-beam{position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(160,200,160,.9),transparent);box-shadow:0 0 12px 4px rgba(160,200,160,.5);top:0;animation:scanBeam 2s ease-in-out 1s 2 alternate;opacity:0;z-index:5;}
 @keyframes scanBeam{0%{top:0%;opacity:1}100%{top:100%;opacity:1}}
-.corner{position:absolute;width:20px;height:20px;border-color:rgba(80,200,255,.8);border-style:solid;z-index:6;opacity:0;transition:opacity .4s ease;}
+.corner{position:absolute;width:20px;height:20px;border-color:rgba(160,200,160,.8);border-style:solid;z-index:6;opacity:0;transition:opacity .4s ease;}
 .corner.tl{top:10px;left:10px;border-width:2px 0 0 2px;border-radius:3px 0 0 0;}
 .corner.tr{top:10px;right:10px;border-width:2px 2px 0 0;border-radius:0 3px 0 0;}
 .corner.bl{bottom:10px;left:10px;border-width:0 0 2px 2px;border-radius:0 0 0 3px;}
 .corner.br{bottom:10px;right:10px;border-width:0 2px 2px 0;border-radius:0 0 3px 0;}
 .avatar-block.scanning .corner{opacity:1;}
-.avatar-block.granted .corner{border-color:rgba(80,210,100,.9);}
+.avatar-block.granted .corner{border-color:rgba(160,200,160,.9);}
 .avatar-wrap{width:110px;height:110px;border:3px solid rgba(255,255,255,.25);border-radius:18px;overflow:hidden;background:var(--card-dark);flex-shrink:0;position:relative;z-index:2;transition:border-color .5s ease;}
-.avatar-block.granted .avatar-wrap{border-color:rgba(80,210,100,.7);}
-.avatar-inner{width:100%;height:100%;background:linear-gradient(145deg,var(--card-light) 30%,var(--card-dark) 100%);display:flex;align-items:center;justify-content:center;}
+.avatar-block.granted .avatar-wrap{border-color:rgba(160,200,160,.7);}
+.avatar-inner{width:100%;height:100%;background:linear-gradient(145deg,#d8d8e4 30%,#909098 100%);display:flex;align-items:center;justify-content:center;}
 .avatar-letter{font-family:'Space Mono',monospace;font-size:2.8rem;font-weight:700;color:rgba(255,255,255,.5);}
-.scan-status{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.15em;color:rgba(80,200,255,.9);z-index:6;opacity:0;white-space:nowrap;transition:color .4s ease;}
+.scan-status{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.15em;color:rgba(160,200,160,.9);z-index:6;opacity:0;white-space:nowrap;transition:color .4s ease;}
 .avatar-block.scanning .scan-status{opacity:1;animation:blink .6s infinite;}
-.avatar-block.granted .scan-status{opacity:1;animation:none;color:rgba(80,210,100,1);}
+.avatar-block.granted .scan-status{opacity:1;animation:none;color:rgba(160,200,160,1);}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
 .hero-card-bottom{padding:16px 18px 0;display:flex;flex-direction:column;gap:10px;}
-.badge-open{display:inline-flex;align-items:center;gap:6px;background:rgba(240,176,96,.15);border:1.5px solid var(--badge-text);border-radius:20px;padding:5px 14px;font-family:'Space Mono',monospace;font-size:.62rem;color:var(--badge-text);letter-spacing:.08em;align-self:flex-start;animation:badgePop .5s cubic-bezier(.34,1.56,.64,1) 3.5s both;}
+.badge-open{display:inline-flex;align-items:center;gap:6px;background:rgba(210,210,220,.15);border:1.5px solid rgba(210,210,224,.5);border-radius:20px;padding:5px 14px;font-family:'Space Mono',monospace;font-size:.62rem;color:var(--text);letter-spacing:.08em;align-self:flex-start;animation:badgePop .5s cubic-bezier(.34,1.56,.64,1) 3.5s both;}
 @keyframes badgePop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
-.badge-open::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--badge-text);animation:blink 1.4s infinite;}
+.badge-open::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--text);animation:blink 1.4s infinite;}
 .hero-name{font-family:'Space Mono',monospace;font-size:1.3rem;font-weight:700;animation:textSlide .5s ease 3.6s both;}
 .hero-role{color:var(--text-dim);font-size:.78rem;animation:textSlide .5s ease 3.7s both;margin-top:2px;}
 @keyframes textSlide{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .hero-btns{display:flex;gap:8px;margin-top:4px;animation:textSlide .5s ease 3.8s both;}
 .hero-btn{flex:1;padding:9px 0;border-radius:30px;font-family:'Space Mono',monospace;font-size:.68rem;font-weight:700;text-align:center;text-decoration:none;border:none;cursor:pointer;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .2s;letter-spacing:.04em;}
-.hero-btn.hire{background:var(--card);color:#2a1520;}
+.hero-btn.hire{background:var(--card);color:#1a1a22;}
 .hero-btn.copy{background:rgba(255,255,255,.1);color:var(--text);border:1px solid rgba(255,255,255,.15);}
 .hero-btn:hover{transform:scale(1.06);box-shadow:0 6px 18px rgba(0,0,0,.3);}
 .hero-barcode{padding:10px 18px 6px;background:rgba(0,0,0,.18);border-radius:12px;border:1px solid rgba(255,255,255,.07);margin-top:4px;}
-.hb-label{font-family:'Space Mono',monospace;font-size:.48rem;letter-spacing:.1em;color:rgba(80,210,100,.7);margin-bottom:7px;text-align:center;}
+.hb-label{font-family:'Space Mono',monospace;font-size:.48rem;letter-spacing:.1em;color:rgba(160,200,160,.7);margin-bottom:7px;text-align:center;}
 .hb-bars{display:flex;align-items:flex-end;gap:2px;justify-content:center;height:36px;}
 .hb-bars span{display:block;background:rgba(255,255,255,.75);border-radius:1px;transition:opacity .3s;}
 .hb-code{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.12em;color:rgba(255,255,255,.3);text-align:center;margin-top:6px;}
 .hero-barcode{position:relative;overflow:hidden;}
-.hero-barcode::after{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(80,210,100,.6),transparent);animation:bcScan 2.4s ease-in-out infinite;pointer-events:none;}
+.hero-barcode::after{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(160,200,160,.6),transparent);animation:bcScan 2.4s ease-in-out infinite;pointer-events:none;}
 @keyframes bcScan{0%{top:6px;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:calc(100% - 6px);opacity:0}}
 
 /* PROJECT POPUP */
@@ -236,14 +236,14 @@ section#contact{min-height:auto;}
 .pp-title{font-family:'Space Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:8px;}
 .pp-desc{font-size:.85rem;color:var(--text-dim);line-height:1.7;margin-bottom:18px;}
 .pp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
-.pp-tag{padding:4px 12px;background:rgba(200,145,154,.12);border:1px solid rgba(200,145,154,.25);border-radius:20px;font-size:.65rem;color:var(--card-light);font-family:'Space Mono',monospace;}
+.pp-tag{padding:4px 12px;background:rgba(180,180,195,.12);border:1px solid rgba(180,180,195,.25);border-radius:20px;font-size:.65rem;color:var(--text);font-family:'Space Mono',monospace;}
 .pp-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;}
 .pp-meta-item{background:var(--bg3);border-radius:10px;padding:10px 14px;}
 .pp-meta-label{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:.12em;color:var(--text-dim);margin-bottom:3px;}
 .pp-meta-val{font-size:.78rem;font-weight:500;}
 .pp-actions{display:flex;gap:10px;}
 .pp-btn{flex:1;padding:10px 0;border-radius:30px;font-family:'Space Mono',monospace;font-size:.7rem;font-weight:700;text-align:center;text-decoration:none;border:none;cursor:pointer;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .2s;letter-spacing:.04em;}
-.pp-btn.primary{background:var(--card);color:#2a1520;}
+.pp-btn.primary{background:var(--card);color:#1a1a22;}
 .pp-btn.secondary{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.15);}
 .pp-btn:hover{transform:scale(1.05);box-shadow:0 6px 18px rgba(0,0,0,.3);}
 .pp-close{position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.4);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6);font-size:.9rem;z-index:2;transition:all .2s;}
@@ -260,13 +260,13 @@ section#contact{min-height:auto;}
 .cat-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
 .cat-tab{padding:6px 16px;border-radius:20px;font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.06em;border:1px solid rgba(255,255,255,.1);background:transparent;color:var(--text-dim);cursor:pointer;transition:all .25s cubic-bezier(.34,1.56,.64,1);}
 .cat-tab:hover{color:var(--text);border-color:rgba(255,255,255,.25);}
-.cat-tab.active{background:var(--card);color:#2a1520;border-color:var(--card);font-weight:700;}
+.cat-tab.active{background:var(--card);color:#1a1a22;border-color:var(--card);font-weight:700;}
 .cat-tab span{font-size:.55rem;opacity:.7;margin-left:4px;}
 .cat-section{display:none;}
 .cat-section.active{display:block;}
 .cat-label{font-family:'Space Mono',monospace;font-size:.55rem;letter-spacing:.2em;color:var(--text-dim);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.06);}
 .project-device{background:var(--bg2);border-radius:20px;padding:20px;position:relative;border:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;gap:16px;}
-.feat-card{width:100%;background:linear-gradient(145deg,var(--card-light) 0%,var(--card) 55%,var(--card-dark) 100%);border-radius:16px;padding:28px 24px 24px;position:relative;overflow:hidden;cursor:pointer;transition:transform .4s cubic-bezier(.34,1.56,.64,1);min-height:140px;display:flex;flex-direction:column;justify-content:flex-end;}
+.feat-card{width:100%;background:linear-gradient(145deg,#d0d0dc 0%,#b0b0c0 55%,#909098 100%);border-radius:16px;padding:28px 24px 24px;position:relative;overflow:hidden;cursor:pointer;transition:transform .4s cubic-bezier(.34,1.56,.64,1);min-height:140px;display:flex;flex-direction:column;justify-content:flex-end;}
 .feat-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.18),transparent 55%);}
 .feat-card::after{content:'';position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.08);top:-50px;right:-40px;}
 .feat-card:hover{transform:scale(1.02);}
@@ -288,21 +288,21 @@ section#contact{min-height:auto;}
 .proj-status-pct{font-family:'Space Mono',monospace;font-size:.5rem;font-weight:700;}
 .proj-status-bar{height:4px;background:var(--progress-bg);border-radius:4px;overflow:hidden;}
 .proj-status-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.4,0,.2,1) .3s;}
-.pct-done .proj-status-fill{background:linear-gradient(90deg,#5ab878,#80e0a0);}
-.pct-done .proj-status-pct{color:#6dd090;}
+.pct-done .proj-status-fill{background:linear-gradient(90deg,#8888a0,#aaaacc);}
+.pct-done .proj-status-pct{color:#9999bb;}
 .pct-wip .proj-status-fill{background:linear-gradient(90deg,var(--card-dark),var(--card-light));}
 .pct-wip .proj-status-pct{color:var(--card-light);}
-.pct-low .proj-status-fill{background:linear-gradient(90deg,var(--blue-border),#88aaee);}
-.pct-low .proj-status-pct{color:#88aaee;}
+.pct-low .proj-status-fill{background:linear-gradient(90deg,var(--blue-border),#aaaacc);}
+.pct-low .proj-status-pct{color:#aaaacc;}
 .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px;}
 .proj-card{background:var(--bg2);border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,.06);cursor:pointer;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .3s;position:relative;overflow:hidden;}
-.proj-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,145,154,.08),transparent);opacity:0;transition:opacity .3s;}
+.proj-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(180,180,195,.08),transparent);opacity:0;transition:opacity .3s;}
 .proj-card:hover{transform:scale(1.06) translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.4);}
 .proj-card:hover::before{opacity:1;}
 .proj-card-thumb{width:100%;aspect-ratio:4/3;border-radius:8px;margin-bottom:10px;position:relative;overflow:hidden;}
 .proj-card-thumb::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 25% 25%,rgba(255,255,255,.18),transparent 55%);}
 .proj-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;}
-.proj-tag{padding:2px 8px;background:rgba(200,145,154,.1);border:1px solid rgba(200,145,154,.18);border-radius:12px;font-size:.55rem;color:var(--card-light);font-family:'Space Mono',monospace;}
+.proj-tag{padding:2px 8px;background:rgba(180,180,195,.1);border:1px solid rgba(180,180,195,.18);border-radius:12px;font-size:.55rem;color:var(--text);font-family:'Space Mono',monospace;}
 .proj-card-name{font-family:'Space Mono',monospace;font-size:.72rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .proj-card-type{font-size:.68rem;color:var(--text-dim);margin-top:3px;}
 .proj-card-row{display:flex;justify-content:space-between;align-items:flex-start;}
@@ -320,7 +320,7 @@ section#contact{min-height:auto;}
 .skill-bar{height:100%;width:0%;border-radius:5px;transition:width 1.2s cubic-bezier(.4,0,.2,1) .4s;}
 
 /* CONTACT */
-#contact{background:var(--bg2);flex-direction:column;justify-content:center;align-items:center;gap:0;padding-top:80px;padding-bottom:0;min-height:auto;position:relative;overflow:hidden;border-top:3px solid rgba(200,145,154,.2);}
+#contact{background:var(--bg2);flex-direction:column;justify-content:center;align-items:center;gap:0;padding-top:80px;padding-bottom:0;min-height:auto;position:relative;overflow:hidden;border-top:3px solid rgba(180,180,195,.2);}
 .contact-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black,transparent);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black,transparent);}
 .contact-inner{display:flex;gap:48px;align-items:flex-start;width:min(760px,94vw);position:relative;z-index:1;flex-wrap:wrap;}
 .contact-left{flex:1;min-width:260px;}
@@ -329,7 +329,7 @@ section#contact{min-height:auto;}
 .contact-sub{color:var(--text-dim);font-size:.9rem;margin-bottom:28px;line-height:1.7;}
 .contact-links{display:flex;gap:12px;flex-wrap:wrap;}
 .contact-btn{padding:10px 22px;border-radius:40px;font-family:'Space Mono',monospace;font-size:.75rem;font-weight:700;text-decoration:none;cursor:pointer;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .25s;border:none;letter-spacing:.04em;}
-.contact-btn.primary{background:var(--card);color:#2a1820;}
+.contact-btn.primary{background:var(--card);color:#1a1a22;}
 .contact-btn.secondary{background:transparent;color:var(--text);border:1.5px solid rgba(255,255,255,.2);}
 .contact-btn:hover{transform:scale(1.1);box-shadow:0 8px 20px rgba(0,0,0,.35);}
 .contact-right{display:flex;flex-direction:column;gap:12px;min-width:200px;}
@@ -339,8 +339,8 @@ section#contact{min-height:auto;}
 .cc-label{font-size:.65rem;color:var(--text-dim);font-family:'Space Mono',monospace;}
 .cc-value{font-size:.82rem;font-weight:500;margin-top:1px;}
 .contact-socials{display:flex;gap:8px;flex-wrap:wrap;padding-top:4px;}
-.social-pill{padding:6px 14px;background:rgba(200,145,154,.12);border:1px solid rgba(200,145,154,.25);border-radius:20px;font-size:.7rem;color:var(--card-light);text-decoration:none;font-family:'Space Mono',monospace;transition:all .25s cubic-bezier(.34,1.56,.64,1);}
-.social-pill:hover{transform:scale(1.1);background:rgba(200,145,154,.25);}
+.social-pill{padding:6px 14px;background:rgba(180,180,195,.12);border:1px solid rgba(180,180,195,.25);border-radius:20px;font-size:.7rem;color:var(--card-light);text-decoration:none;font-family:'Space Mono',monospace;transition:all .25s cubic-bezier(.34,1.56,.64,1);}
+.social-pill:hover{transform:scale(1.1);background:rgba(180,180,195,.25);}
 .footer-strip{width:100%;display:flex;justify-content:space-between;align-items:center;padding:28px 40px 36px;border-top:1px solid rgba(255,255,255,.08);margin-top:60px;position:relative;z-index:1;background:rgba(0,0,0,.12);}
 .grow-on-scroll{opacity:0;transform:scale(.85);transition:opacity .6s ease,transform .7s cubic-bezier(.34,1.56,.64,1);}
 .grow-on-scroll.visible{opacity:1;transform:scale(1);}
@@ -401,10 +401,10 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
   <div class="bg-blob bg-blob-1"></div>
   <div class="bg-blob bg-blob-2"></div>
   <div class="bg-blob bg-blob-3"></div>
-  <div class="hud-corner hud-tl"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M2 30 L2 2 L30 2" stroke="rgba(200,145,154,.6)" stroke-width="1.5" stroke-linecap="round"/><circle cx="2" cy="2" r="2" fill="rgba(200,145,154,.6)"/></svg></div>
-  <div class="hud-corner hud-tr"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 2 L58 2 L58 30" stroke="rgba(200,145,154,.6)" stroke-width="1.5" stroke-linecap="round"/><circle cx="58" cy="2" r="2" fill="rgba(200,145,154,.6)"/></svg></div>
-  <div class="hud-corner hud-bl"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M2 30 L2 58 L30 58" stroke="rgba(85,136,204,.5)" stroke-width="1.5" stroke-linecap="round"/><circle cx="2" cy="58" r="2" fill="rgba(85,136,204,.5)"/></svg></div>
-  <div class="hud-corner hud-br"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 58 L58 58 L58 30" stroke="rgba(85,136,204,.5)" stroke-width="1.5" stroke-linecap="round"/><circle cx="58" cy="58" r="2" fill="rgba(85,136,204,.5)"/></svg></div>
+  <div class="hud-corner hud-tl"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M2 30 L2 2 L30 2" stroke="rgba(180,180,195,.6)" stroke-width="1.5" stroke-linecap="round"/><circle cx="2" cy="2" r="2" fill="rgba(180,180,195,.6)"/></svg></div>
+  <div class="hud-corner hud-tr"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 2 L58 2 L58 30" stroke="rgba(180,180,195,.6)" stroke-width="1.5" stroke-linecap="round"/><circle cx="58" cy="2" r="2" fill="rgba(180,180,195,.6)"/></svg></div>
+  <div class="hud-corner hud-bl"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M2 30 L2 58 L30 58" stroke="rgba(130,130,155,.5)" stroke-width="1.5" stroke-linecap="round"/><circle cx="2" cy="58" r="2" fill="rgba(130,130,155,.5)"/></svg></div>
+  <div class="hud-corner hud-br"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 58 L58 58 L58 30" stroke="rgba(130,130,155,.5)" stroke-width="1.5" stroke-linecap="round"/><circle cx="58" cy="58" r="2" fill="rgba(130,130,155,.5)"/></svg></div>
   <div class="data-stream" style="top:18%;animation-duration:22s">01001110 01000001 01001001 01011001 01000001 00100000 FRONTEND DEVELOPER 2024 REACT NEXT.JS TYPESCRIPT</div>
   <div class="data-stream" style="top:72%;animation-duration:18s;animation-delay:3s;opacity:.7">REACT · NEXT.JS · TYPESCRIPT · TAILWIND · FIGMA · CSS · NAIYA · OPEN TO WORK · CREATIVE DEV</div>
   <div class="data-stream" style="top:88%;animation-duration:26s;animation-delay:6s;opacity:.5">0xCF3A · ACCESS GRANTED · IDENTITY VERIFIED · 2024 · PORTFOLIO · INDONESIA · REMOTE READY</div>
@@ -572,11 +572,11 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
         </div>
       </div>
       <div class="project-grid" style="margin-top:16px;">
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('portfolio2')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#c8b89a,#8a7860)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v2</div><div class="proj-card-type">Elegant Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">60%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:60%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('portfolio3')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#f0c080,#d09040)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v3</div><div class="proj-card-type">Cartoony Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">GSAP</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">40%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:40%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('fintech')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#88a8d0,#4868a0)"><div class="thumb-deco thumb-deco-3"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Fintech Dashboard</div><div class="proj-card-type">Web · Chart.js</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Chart.js</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">Almost Done</span><span class="proj-status-pct">80%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:80%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('pricelist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#a890c8,#785898)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">App Premium Web</div><div class="proj-card-type">Firebase · Admin</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Firebase</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">50%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:50%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('streaming')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#f0a8c0,#c07890)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">StreamZ</div><div class="proj-card-type">Movie Streaming</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">TMDB API</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">45%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:45%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('portfolio2')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#b0b0c0,#787888)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v2</div><div class="proj-card-type">Elegant Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">60%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:60%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('portfolio3')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#d8d8e4,#a0a0b0)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v3</div><div class="proj-card-type">Cartoony Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">GSAP</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">40%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:40%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('fintech')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#9898b4,#606080)"><div class="thumb-deco thumb-deco-3"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Fintech Dashboard</div><div class="proj-card-type">Web · Chart.js</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Chart.js</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">Almost Done</span><span class="proj-status-pct">80%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:80%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('pricelist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#9898b8,#585870)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">App Premium Web</div><div class="proj-card-type">Firebase · Admin</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Firebase</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">50%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:50%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('streaming')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#b0b0c0,#888898)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">StreamZ</div><div class="proj-card-type">Movie Streaming</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">TMDB API</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">45%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:45%"></div></div></div></div>
       </div>
     </div>
 
@@ -584,8 +584,8 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="cat-section" id="cat-desktop" data-cat="desktop" style="display:none;">
       <div class="cat-label">DESKTOP APP PROJECTS</div>
       <div class="project-grid">
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('todolist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#8cb0c8,#5a7898)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">TodoList App</div><div class="proj-card-type">Desktop App ✅</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('notetaking')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#7ab0a0,#4a8070)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">NotePad App</div><div class="proj-card-type">VS Code Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">CodeMirror</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">70%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:70%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('todolist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#9898b8,#505068)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">TodoList App</div><div class="proj-card-type">Desktop App ✅</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('notetaking')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#8888a0,#505060)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">NotePad App</div><div class="proj-card-type">VS Code Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">CodeMirror</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">70%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:70%"></div></div></div></div>
       </div>
     </div>
 
@@ -593,8 +593,8 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="cat-section" id="cat-game" data-cat="game" style="display:none;">
       <div class="cat-label">GAME PROJECTS</div>
       <div class="project-grid">
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('pinball')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#7060b0,#403080)"><div class="thumb-deco thumb-deco-3"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">🎱</div></div><div class="proj-card-row"><div><div class="proj-card-name">Pinball Game</div><div class="proj-card-type">Arcade Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C++</span><span class="proj-tag">Unity</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('tictactoe')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#60a080,#306050)"><div class="thumb-deco thumb-deco-1"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">⭕</div></div><div class="proj-card-row"><div><div class="proj-card-name">Tic Tac Toe</div><div class="proj-card-type">Puzzle Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">Unity</span><span class="proj-tag">Minimax AI</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('pinball')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#606078,#383850)"><div class="thumb-deco thumb-deco-3"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">🎱</div></div><div class="proj-card-row"><div><div class="proj-card-name">Pinball Game</div><div class="proj-card-type">Arcade Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C++</span><span class="proj-tag">Unity</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('tictactoe')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#707088,#404050)"><div class="thumb-deco thumb-deco-1"></div><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">⭕</div></div><div class="proj-card-row"><div><div class="proj-card-name">Tic Tac Toe</div><div class="proj-card-type">Puzzle Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">Unity</span><span class="proj-tag">Minimax AI</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
       </div>
     </div>
 
@@ -602,16 +602,16 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="cat-section active" id="cat-all" data-cat="all">
       <div class="cat-label">ALL PROJECTS</div>
       <div class="project-grid">
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('portfolio1')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#c8919a,#b07880)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v1</div><div class="proj-card-type">Web Portfolio ✅</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">EmailJS</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('portfolio2')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#c8b89a,#8a7860)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v2</div><div class="proj-card-type">Elegant Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">60%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:60%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('portfolio3')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#f0c080,#d09040)"><div class="thumb-deco thumb-deco-3"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v3</div><div class="proj-card-type">Cartoony Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">GSAP</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">40%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:40%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('todolist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#8cb0c8,#5a7898)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">TodoList App</div><div class="proj-card-type">Desktop ✅</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('notetaking')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#7ab0a0,#4a8070)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">NotePad App</div><div class="proj-card-type">VS Code Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">CodeMirror</span><span class="proj-tag">HTML</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">70%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:70%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('fintech')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#88a8d0,#4868a0)"><div class="thumb-deco thumb-deco-3"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Fintech Dashboard</div><div class="proj-card-type">Web · Chart.js</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Chart.js</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">Almost Done</span><span class="proj-status-pct">80%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:80%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('pricelist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#a890c8,#785898)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">App Premium Web</div><div class="proj-card-type">Firebase Admin</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Firebase</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">50%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:50%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('streaming')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#f0a8c0,#c07890)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">StreamZ</div><div class="proj-card-type">Movie Streaming</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">TMDB API</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">45%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:45%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('pinball')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#7060b0,#403080)"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">🎱</div></div><div class="proj-card-row"><div><div class="proj-card-name">Pinball Game</div><div class="proj-card-type">Arcade Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C++</span><span class="proj-tag">Unity</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
-        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('tictactoe')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#60a080,#306050)"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">⭕</div></div><div class="proj-card-row"><div><div class="proj-card-name">Tic Tac Toe</div><div class="proj-card-type">Puzzle Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">Unity</span><span class="proj-tag">Minimax AI</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('portfolio1')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#b0b0c0,#909098)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v1</div><div class="proj-card-type">Web Portfolio ✅</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">EmailJS</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('portfolio2')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#b0b0c0,#787888)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v2</div><div class="proj-card-type">Elegant Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">60%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:60%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('portfolio3')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#d8d8e4,#a0a0b0)"><div class="thumb-deco thumb-deco-3"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Portfolio v3</div><div class="proj-card-type">Cartoony Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">GSAP</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">40%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:40%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('todolist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#9898b8,#505068)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">TodoList App</div><div class="proj-card-type">Desktop ✅</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('notetaking')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#8888a0,#505060)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">NotePad App</div><div class="proj-card-type">VS Code Style</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">CodeMirror</span><span class="proj-tag">HTML</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">70%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:70%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('fintech')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#9898b4,#606080)"><div class="thumb-deco thumb-deco-3"></div></div><div class="proj-card-row"><div><div class="proj-card-name">Fintech Dashboard</div><div class="proj-card-type">Web · Chart.js</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Chart.js</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">Almost Done</span><span class="proj-status-pct">80%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:80%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('pricelist')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#9898b8,#585870)"><div class="thumb-deco thumb-deco-1"></div></div><div class="proj-card-row"><div><div class="proj-card-name">App Premium Web</div><div class="proj-card-type">Firebase Admin</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">Firebase</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">50%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:50%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-2" onclick="openPopup('streaming')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#b0b0c0,#888898)"><div class="thumb-deco thumb-deco-2"></div></div><div class="proj-card-row"><div><div class="proj-card-name">StreamZ</div><div class="proj-card-type">Movie Streaming</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JS</span><span class="proj-tag">TMDB API</span></div><div class="proj-status pct-wip"><div class="proj-status-row"><span class="proj-status-label">In Progress</span><span class="proj-status-pct">45%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:45%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-3" onclick="openPopup('pinball')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#606078,#383850)"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">🎱</div></div><div class="proj-card-row"><div><div class="proj-card-name">Pinball Game</div><div class="proj-card-type">Arcade Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C++</span><span class="proj-tag">Unity</span><span class="proj-tag">Figma</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
+        <div class="proj-card grow-on-scroll delay-1" onclick="openPopup('tictactoe')"><div class="proj-card-thumb" style="background:linear-gradient(145deg,#707088,#404050)"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.2rem;z-index:1;">⭕</div></div><div class="proj-card-row"><div><div class="proj-card-name">Tic Tac Toe</div><div class="proj-card-type">Puzzle Game</div></div><span class="proj-arrow">↗</span></div><div class="proj-tags"><span class="proj-tag">C#</span><span class="proj-tag">Unity</span><span class="proj-tag">Minimax AI</span></div><div class="proj-status pct-done"><div class="proj-status-row"><span class="proj-status-label">Complete</span><span class="proj-status-pct">100%</span></div><div class="proj-status-bar"><div class="proj-status-fill" style="width:100%"></div></div></div></div>
       </div>
     </div>
 
@@ -639,7 +639,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
     <div class="contact-right">
       <div class="contact-card grow-on-scroll delay-1"><div class="cc-icon">✉</div><div><div class="cc-label">Email</div><div class="cc-value">naiya@email.com</div></div></div>
       <div class="contact-card grow-on-scroll delay-2"><div class="cc-icon">📍</div><div><div class="cc-label">Location</div><div class="cc-value">Indonesia · Remote</div></div></div>
-      <div class="contact-card grow-on-scroll delay-3"><div class="cc-icon">⚡</div><div><div class="cc-label">Status</div><div class="cc-value" style="color:var(--badge-text)">Open to work</div></div></div>
+      <div class="contact-card grow-on-scroll delay-3"><div class="cc-icon">⚡</div><div><div class="cc-label">Status</div><div class="cc-value" style="color:var(--text)">Open to work</div></div></div>
       <div class="contact-socials grow-on-scroll"><a href="#" class="social-pill">Dribbble</a><a href="#" class="social-pill">GitHub</a><a href="#" class="social-pill">LinkedIn</a></div>
     </div>
   </div>
@@ -652,16 +652,16 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <script>
 // PROJECT DATA
 const PROJECTS = {
-  portfolio1:{title:'Portfolio v1 — Web Portfolio',eyebrow:'FEATURED PROJECT · 2024',type:'Web App · Portfolio',desc:'A personal web portfolio with a modern UI, smooth animations, and a contact form connected to Gmail via EmailJS. Built with HTML, CSS, and JavaScript. Features a scanning identity card hero, particle background, project popups, and a cyberpunk-inspired aesthetic. Fully responsive across mobile and desktop.',tags:['HTML','CSS','JavaScript','EmailJS','Gmail API'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Status',val:'Live ✅'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#c8919a,#b07880)',live:'#',github:'#'},
-  portfolio2:{title:'Portfolio v2 — Elegant Style',eyebrow:'DESIGN PROJECT · 2024',type:'Web App · Portfolio',desc:'A refined, elegant take on the personal portfolio. Features a minimal layout with serif typography, subtle hover transitions, monochrome color palette with gold accents, and a clean grid-based project showcase.',tags:['HTML','CSS','JavaScript','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Style',val:'Elegant / Minimal'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#c8b89a,#8a7860)',live:'#',github:'#'},
-  portfolio3:{title:'Portfolio v3 — Cartoony Style',eyebrow:'DESIGN PROJECT · 2024',type:'Web App · Portfolio',desc:'A fun, expressive portfolio with a hand-drawn cartoon aesthetic. Bold outlines, bouncy animations, bright pastel colors, and illustrated characters make this version stand out.',tags:['HTML','CSS','JavaScript','GSAP','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Style',val:'Cartoony / Playful'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#f0c080,#d09040)',live:'#',github:'#'},
-  todolist:{title:'TodoList — Desktop App',eyebrow:'DESKTOP APP · 2024',type:'Desktop App · Electron',desc:'A simple yet polished to-do list desktop application built with Electron, HTML, CSS, and JavaScript. Features task creation, completion toggling, priority labels, and local data persistence via electron-store.',tags:['Electron','HTML','CSS','JavaScript','electron-store'],meta:[{label:'Role',val:'Developer'},{label:'Year',val:'2024'},{label:'Status',val:'Done ✅'},{label:'Platform',val:'Windows / Mac'}],color:'linear-gradient(145deg,#8cb0c8,#5a7898)',live:'https://khiranay.github.io/task-manager/',github:'#'},
-  notetaking:{title:'NotePad — VS Code Style Notes',eyebrow:'DESKTOP APP · 2024',type:'Desktop App · Notes',desc:'A VS Code-inspired note-taking app with a file-tree sidebar, syntax highlighting, tab system for multiple notes, and markdown preview. Built with Electron and CodeMirror.',tags:['Electron','CodeMirror','HTML','CSS','JavaScript'],meta:[{label:'Role',val:'Developer'},{label:'Year',val:'2024'},{label:'Sync',val:'Android (WIP 🔧)'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#7ab0a0,#4a8070)',live:'#',github:'#'},
-  fintech:{title:'Fintech Dashboard',eyebrow:'DASHBOARD PROJECT · 2024',type:'Web App · Finance',desc:'A financial analytics dashboard with spending charts, transaction history, wallet overview, and budget tracking. Built with HTML, CSS, JavaScript, and Chart.js.',tags:['HTML','CSS','JavaScript','Chart.js','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Status',val:'Alignment WIP 🔧'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#88a8d0,#4868a0)',live:'#',github:'#'},
-  pricelist:{title:'App Premium Web',eyebrow:'FULLSTACK PROJECT · 2024',type:'Web App · SaaS',desc:'A premium service price list web app where clients can browse packages and admins can update pricing, descriptions, and availability directly from a password-protected web dashboard.',tags:['HTML','CSS','JavaScript','Firebase','Admin Panel'],meta:[{label:'Role',val:'Fullstack Developer'},{label:'Year',val:'2024'},{label:'Users',val:'Admin + Public'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#a890c8,#785898)',live:'https://khiranay.github.io/web-naiyacart/',github:'#'},
-  streaming:{title:'StreamZ — Movie Streaming Web',eyebrow:'UI PROJECT · 2024',type:'Web App · Entertainment',desc:'A cartoony pastel-style movie streaming web app UI. Features a playful illustrated homepage, chunky rounded cards for movie listings, and fun hover animations. Built with TMDB API integration.',tags:['HTML','CSS','JavaScript','TMDB API','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Style',val:'Cartoony / Pastel'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#f0a8c0,#c07890)',live:'#',github:'#'},
-  pinball:{title:'Pinball Game',eyebrow:'GAME PROJECT · 2024',type:'Game · Arcade',desc:'A classic pinball arcade game built with C++ using physics-based ball simulation, bumper collision detection, flipper controls, and a scoring system. Features smooth 60fps gameplay and retro-style visuals.',tags:['C++','Physics Engine','Game Dev','Figma','Unity'],meta:[{label:'Role',val:'Game Developer'},{label:'Year',val:'2024'},{label:'Engine',val:'C++ / Unity'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#7060b0,#403080)',live:'#',github:'#'},
-  tictactoe:{title:'Tic Tac Toe',eyebrow:'GAME PROJECT · 2024',type:'Game · Puzzle',desc:'A polished Tic Tac Toe game built with C# in Unity. Features a clean UI, single-player mode with a minimax AI opponent, two-player local mode, animated win detection, and a score tracker.',tags:['C#','Unity','Minimax AI','Game Dev','UI Design'],meta:[{label:'Role',val:'Game Developer'},{label:'Year',val:'2024'},{label:'Engine',val:'Unity'},{label:'AI',val:'Minimax Algorithm'}],color:'linear-gradient(145deg,#60a080,#306050)',live:'#',github:'#'}
+  portfolio1:{title:'Portfolio v1 — Web Portfolio',eyebrow:'FEATURED PROJECT · 2024',type:'Web App · Portfolio',desc:'A personal web portfolio with a modern UI, smooth animations, and a contact form connected to Gmail via EmailJS. Built with HTML, CSS, and JavaScript. Features a scanning identity card hero, particle background, project popups, and a cyberpunk-inspired aesthetic. Fully responsive across mobile and desktop.',tags:['HTML','CSS','JavaScript','EmailJS','Gmail API'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Status',val:'Live ✅'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#b0b0c0,#909098)',live:'#',github:'#'},
+  portfolio2:{title:'Portfolio v2 — Elegant Style',eyebrow:'DESIGN PROJECT · 2024',type:'Web App · Portfolio',desc:'A refined, elegant take on the personal portfolio. Features a minimal layout with serif typography, subtle hover transitions, monochrome color palette with gold accents, and a clean grid-based project showcase.',tags:['HTML','CSS','JavaScript','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Style',val:'Elegant / Minimal'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#b0b0c0,#787888)',live:'#',github:'#'},
+  portfolio3:{title:'Portfolio v3 — Cartoony Style',eyebrow:'DESIGN PROJECT · 2024',type:'Web App · Portfolio',desc:'A fun, expressive portfolio with a hand-drawn cartoon aesthetic. Bold outlines, bouncy animations, bright pastel colors, and illustrated characters make this version stand out.',tags:['HTML','CSS','JavaScript','GSAP','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Style',val:'Cartoony / Playful'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#d8d8e4,#a0a0b0)',live:'#',github:'#'},
+  todolist:{title:'TodoList — Desktop App',eyebrow:'DESKTOP APP · 2024',type:'Desktop App · Electron',desc:'A simple yet polished to-do list desktop application built with Electron, HTML, CSS, and JavaScript. Features task creation, completion toggling, priority labels, and local data persistence via electron-store.',tags:['Electron','HTML','CSS','JavaScript','electron-store'],meta:[{label:'Role',val:'Developer'},{label:'Year',val:'2024'},{label:'Status',val:'Done ✅'},{label:'Platform',val:'Windows / Mac'}],color:'linear-gradient(145deg,#9898b8,#505068)',live:'https://khiranay.github.io/task-manager/',github:'#'},
+  notetaking:{title:'NotePad — VS Code Style Notes',eyebrow:'DESKTOP APP · 2024',type:'Desktop App · Notes',desc:'A VS Code-inspired note-taking app with a file-tree sidebar, syntax highlighting, tab system for multiple notes, and markdown preview. Built with Electron and CodeMirror.',tags:['Electron','CodeMirror','HTML','CSS','JavaScript'],meta:[{label:'Role',val:'Developer'},{label:'Year',val:'2024'},{label:'Sync',val:'Android (WIP 🔧)'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#8888a0,#505060)',live:'#',github:'#'},
+  fintech:{title:'Fintech Dashboard',eyebrow:'DASHBOARD PROJECT · 2024',type:'Web App · Finance',desc:'A financial analytics dashboard with spending charts, transaction history, wallet overview, and budget tracking. Built with HTML, CSS, JavaScript, and Chart.js.',tags:['HTML','CSS','JavaScript','Chart.js','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Status',val:'Alignment WIP 🔧'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#9898b4,#606080)',live:'#',github:'#'},
+  pricelist:{title:'App Premium Web',eyebrow:'FULLSTACK PROJECT · 2024',type:'Web App · SaaS',desc:'A premium service price list web app where clients can browse packages and admins can update pricing, descriptions, and availability directly from a password-protected web dashboard.',tags:['HTML','CSS','JavaScript','Firebase','Admin Panel'],meta:[{label:'Role',val:'Fullstack Developer'},{label:'Year',val:'2024'},{label:'Users',val:'Admin + Public'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#9898b8,#585870)',live:'https://khiranay.github.io/web-naiyacart/',github:'#'},
+  streaming:{title:'StreamZ — Movie Streaming Web',eyebrow:'UI PROJECT · 2024',type:'Web App · Entertainment',desc:'A cartoony pastel-style movie streaming web app UI. Features a playful illustrated homepage, chunky rounded cards for movie listings, and fun hover animations. Built with TMDB API integration.',tags:['HTML','CSS','JavaScript','TMDB API','Figma'],meta:[{label:'Role',val:'Frontend Developer'},{label:'Year',val:'2024'},{label:'Style',val:'Cartoony / Pastel'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#b0b0c0,#888898)',live:'#',github:'#'},
+  pinball:{title:'Pinball Game',eyebrow:'GAME PROJECT · 2024',type:'Game · Arcade',desc:'A classic pinball arcade game built with C++ using physics-based ball simulation, bumper collision detection, flipper controls, and a scoring system. Features smooth 60fps gameplay and retro-style visuals.',tags:['C++','Physics Engine','Game Dev','Figma','Unity'],meta:[{label:'Role',val:'Game Developer'},{label:'Year',val:'2024'},{label:'Engine',val:'C++ / Unity'},{label:'Team',val:'Solo project'}],color:'linear-gradient(145deg,#606078,#383850)',live:'#',github:'#'},
+  tictactoe:{title:'Tic Tac Toe',eyebrow:'GAME PROJECT · 2024',type:'Game · Puzzle',desc:'A polished Tic Tac Toe game built with C# in Unity. Features a clean UI, single-player mode with a minimax AI opponent, two-player local mode, animated win detection, and a score tracker.',tags:['C#','Unity','Minimax AI','Game Dev','UI Design'],meta:[{label:'Role',val:'Game Developer'},{label:'Year',val:'2024'},{label:'Engine',val:'Unity'},{label:'AI',val:'Minimax Algorithm'}],color:'linear-gradient(145deg,#707088,#404050)',live:'#',github:'#'}
 };
 
 function switchCat(cat) {
@@ -715,7 +715,7 @@ class Pt{
   u(){this.y-=this.sp;this.x+=this.dx;this.p+=this.ps;if(this.y<-10)this.rs(false);}
   d(){const o=this.o*(.7+.3*Math.sin(this.p));ctx.beginPath();ctx.arc(this.x,this.y,this.s,0,Math.PI*2);ctx.fillStyle='rgba('+this.c+','+o+')';ctx.fill();}
 }
-function dl(){const md=90;for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<md){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle='rgba(200,145,154,'+(1-d/md)*.06+')';ctx.lineWidth=.5;ctx.stroke();}}}
+function dl(){const md=90;for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<md){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle='rgba(180,180,195,'+(1-d/md)*.06+')';ctx.lineWidth=.5;ctx.stroke();}}}
 function ip(){pts=[];const c=Math.min(120,Math.floor(W*H/8000));for(let i=0;i<c;i++)pts.push(new Pt());}
 function af(){ctx.clearRect(0,0,W,H);dl();pts.forEach(p=>{p.u();p.d();});requestAnimationFrame(af);}
 rc();ip();af();
@@ -737,7 +737,7 @@ function runScan(){
   setTimeout(()=>{
     bl.classList.remove('scanning');bl.classList.add('granted');
     if(st)st.textContent='✓ IDENTITY VERIFIED';
-    fr.style.boxShadow='0 0 0 2px rgba(80,210,100,.5), 0 24px 70px rgba(0,0,0,.35)';
+    fr.style.boxShadow='0 0 0 2px rgba(160,200,160,.5), 0 24px 70px rgba(0,0,0,.35)';
     document.getElementById('heroBarcodeWrap')&&(document.getElementById('heroBarcodeWrap').style.opacity='1');
     // desktop panels
     if(lp)lp.classList.add('visible');
@@ -748,7 +748,7 @@ function runScan(){
       if(el){setTimeout(()=>el.classList.add('visible'),(i-1)*90);}
     }
     const f=document.createElement('div');
-    f.style.cssText='position:fixed;inset:0;background:rgba(80,210,100,.04);pointer-events:none;z-index:9994;';
+    f.style.cssText='position:fixed;inset:0;background:rgba(160,200,160,.04);pointer-events:none;z-index:9994;';
     f.animate([{opacity:0},{opacity:1},{opacity:0}],{duration:600,easing:'ease'});
     document.body.appendChild(f);setTimeout(()=>f.remove(),700);
   },4800);
@@ -760,7 +760,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closePopup();});
 function copyEmail(){
   navigator.clipboard.writeText('naiya@email.com').catch(()=>{});
   const b=document.getElementById('copyEmailBtn');
-  b.textContent='Copied! ✓';b.style.cssText='background:rgba(80,210,100,.2);border-color:rgba(80,210,100,.5);color:rgb(100,220,120);';
+  b.textContent='Copied! ✓';b.style.cssText='background:rgba(160,200,160,.2);border-color:rgba(160,200,160,.5);color:rgb(140,190,140);';
   setTimeout(()=>{b.textContent='Copy Email';b.style.cssText='';},2000);
 }
 
