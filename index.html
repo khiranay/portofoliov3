@@ -777,7 +777,10 @@ document.querySelectorAll('.skill-bar').forEach(bar=>{
   o.observe(bar);
 });
 const nl=document.querySelectorAll('nav a');
-const spy=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){nl.forEach(l=>l.classList.remove("active"));const lk=document.querySelector('nav a[href="#'+x.target.id+'"]');if(lk)lk.classList.add("active");}}),{threshold:.5});
+// Nav click: langsung set active
+nl.forEach(a=>a.addEventListener('click',function(){nl.forEach(l=>l.classList.remove('active'));this.classList.add('active');}));
+// Scroll spy dengan threshold rendah agar section panjang tetap terdeteksi
+const spy=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){nl.forEach(l=>l.classList.remove("active"));const lk=document.querySelector('nav a[href="#'+x.target.id+'"]');if(lk)lk.classList.add("active");}}),{threshold:0.1,rootMargin:'-60px 0px -40% 0px'});
 document.querySelectorAll('section').forEach(s=>spy.observe(s));
 document.querySelectorAll('.proj-card,.contact-card,.skill-item').forEach(el=>{
   el.addEventListener('touchstart',function(){this.style.transition='transform .15s ease';this.style.transform='scale(.97)';},{passive:true});
